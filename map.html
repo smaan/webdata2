@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Sukhbir Singh
+    URL Address: http://omega.uta.edu/~sxs1404/project2/map.html
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="map.js"></script>
+  </head>
+  <body>
+    <h2>To find the zestimate value, enter your address details or click on the map</h2>
+    <form>
+       <label>House address: <input type="text" id="address"/></label>
+       <label>City: <input type="text" id="city"/></label>
+       <label>State: <input type="text" id="state"/></label>
+       <label>Zip Code: <input type="text" id="zipcode"/></label><br><br>
+       <input type="button" onclick="find();" value="Find"/>
+       <input type="button" onclick="clearall();" value="Clear"/><br><br><br>
+    </form>
+    <div id="map-canvas" style = "width: 600px; height: 300px; border: 2px solid"></div><br><br>
+    <div id="output" style = "width: 1000px; height: 100px"></div>
+  </body>
+</html>
